@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+/* Visible keyboard focus everywhere — never rely on color alone. */
+:focus-visible {
+  outline: 2px solid theme("colors.gold.500");
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
